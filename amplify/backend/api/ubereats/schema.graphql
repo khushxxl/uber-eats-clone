@@ -1,0 +1,17 @@
+type Users @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  sub: String
+  name: String
+  email: String
+  phone: String
+}
+
+type FoodDishes @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  price: Float
+  kcal: Int
+  desc: String
+  image: String
+}
+ 
